@@ -13,14 +13,14 @@ public class Hw8 {
         //Task 1
         System.out.println("Task 1");
 
-        int[] firstArray = {1,2,3};
+        int[] firstArray = {1, 2, 3};
         double[] secondArray = {1.57, 7.654, 9.986};
 
         System.out.println("Input number of elements in the third array:");
         int thirdArraySize = scanner();
         int[] thirdArray = new int[thirdArraySize];
         for (int i = 0; i < thirdArraySize; i++) {
-            System.out.print("Enter element " + (i+1) + ": ");
+            System.out.print("Enter element " + (i + 1) + ": ");
             thirdArray[i] = scanner();
         }
         System.out.println("Array number 3: " + Arrays.toString(thirdArray));
@@ -40,19 +40,36 @@ public class Hw8 {
         System.out.println("Task 3");
 
         System.out.println("Reverted first array:");
-        for (int i = firstArray.length; i > 0 ; i--) {
-            System.out.println(firstArray[i-1]);
+        for (int i = firstArray.length; i > 0; i--) {
+            if (i > 1) {
+                System.out.print(firstArray[i - 1] + ", ");
+            } else {
+                System.out.println(firstArray[i - 1]);
+            }
         }
+        System.out.println();
 
         System.out.println("Reverted second array:");
-        for (int i = secondArray.length; i > 0 ; i--) {
-            System.out.println(secondArray[i-1]);
+        for (int i = secondArray.length; i > 0; i--) {
+            if (i > 1) {
+                System.out.print(secondArray[i - 1] + ", ");
+
+            } else {
+                System.out.println(secondArray[i - 1]);
+            }
+
         }
+        System.out.println();
 
         System.out.println("Reverted third array:");
-        for (int i = thirdArray.length; i > 0 ; i--) {
-            System.out.println(thirdArray[i-1]);
+        for (int i = thirdArray.length; i > 0; i--) {
+            if (i > 1) {
+                System.out.print(thirdArray[i - 1] + ", ");
+            } else {
+                System.out.println(thirdArray[i - 1]);
+            }
         }
+        System.out.println();
 
         System.out.println();
 
